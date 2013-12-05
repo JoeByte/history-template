@@ -1,0 +1,74 @@
+#demo-switcher {
+    background:#fff;
+    box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.14);
+    color: #333;
+    padding: 0;
+    position: fixed;
+    right: -200px;
+    top: 20%;
+    -moz-transition: right 500ms ease 0s;
+    -webkit-transition: right 500ms ease 0s;
+    transition: right 500ms ease 0s;
+    width: 200px;
+    z-index: 5;
+}
+#demo-switcher.open {
+	right:0;
+}
+#demo-switcher .handle {
+    background: #fff;
+    border-radius: 2px 0 0 2px;
+    color: #333;
+    font-size: 23px;
+    height: 41px;
+    left: -35px;
+    line-height: 41px;
+    position: absolute;
+    text-align: center;
+    top: 45px;
+    width: 35px;
+}
+
+#demo-switcher .heading {
+    background: -moz-linear-gradient(center top , #FFFFFF 0%, #F7F4F4 100%);
+    background: -webkit-linear-gradient(center top , #FFFFFF 0%, #F7F4F4 100%);
+    background: linear-gradient(center top , #FFFFFF 0%, #F7F4F4 100%);
+    border-bottom: 1px solid rgba(23, 24, 26, 0.15);
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 44px;
+    text-align: center;
+}
+
+#demo-switcher .box-title {
+    border-bottom: 1px solid rgba(23, 24, 26, 0.15);
+    font-size: 12px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+
+#demo-switcher .style, #demo-switcher .skin {
+    border-bottom: 1px solid rgba(23, 24, 26, 0.15);
+    padding: 10px 10px 10px 40px;
+}
+
+#demo-switcher select {
+    background: none repeat scroll 0 0 #F7F7F7;
+    border: 1px solid rgba(23, 24, 26, 0.15);
+    color: #000000;
+    font-size: 11px;
+    margin-left: 5px;
+    padding: 2px;
+    text-transform: capitalize;
+    width: 120px;
+}
+
+
+
+
+
+
+
+
+
