@@ -1,0 +1,1387 @@
+@charset "utf-8";
+/*******************************
+ * CSS Document
+ * pop.css
+ *
+ * @Panda.Lee 
+	  Front-End Web Developer
+	  Panda@moko.cn
+ * @date
+ * @link 
+*******************************/
+
+.tip,
+.tip_1,
+.tip_2 {
+	position:absolute;
+	top:0;
+	left:0;
+	padding:20px 10px;
+	width:200px;
+	height:auto;
+	text-align:center;
+	font-weight:700;
+	z-index:3;
+}
+.tip_1 {
+	text-align:left;
+	line-height:20px;
+}
+.tip_2 {
+	width:300px;
+	font-weight:400;
+}
+
+.atwho {
+	position:absolute;
+	top:0;
+	left:0;
+	padding-left:5px;
+	width:150px;
+	z-index:1001;
+}
+.popBg {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#000;
+	opacity:0.2;
+	filter:alpha(opacity=20);
+	z-index:999;
+}
+.load {
+	position:relative;
+/********** 定位暂时隐藏 ********** 
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-100px auto auto -175px;
+	z-index:1000;
+********** 定位暂时隐藏 **********/ 
+	width:350px;
+	height:200px;
+	line-height:200px;
+	font-size:12px;
+	text-align:center;
+}
+.popBox0, .popBox1, .popBox2, .popBox3 {
+	position:relative;
+/********** 定位暂时隐藏 ********** 
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-150px auto auto -225px;
+	z-index:1000;
+********** 定位暂时隐藏 **********/
+	padding-bottom:70px;
+	width:450px;
+	height:230px;
+	background-color:#FFF;
+	font-family: "微软雅黑";
+}
+.popBox0 h5, .popBox1 h5, .popBox2 h5, .popBox3 h5 {
+	padding:5px 15px;
+	height:20px;
+	line-height:20px;
+	border-width:0 0 1px;
+	font-weight:700;
+}
+.popBox0 h5 a, .popBox1 h5 a, .popBox2 h5 a, .popBox3 h5 a {
+	float:right;
+	font-size:12px;
+}
+.popBox1 .page,
+.popBox0 .button, .popBox1 .button, .popBox2 .button, .popBox3 .button {
+	position:absolute;
+	padding:0;
+	width:100%;
+	left:0;
+	bottom:20px;
+	text-align:center;
+}
+.popBox0 .button input, .popBox1 .button input,.popBox2 .button input, .popBox3 .button input {
+	margin:0 20px;
+	width:110px;
+	height:35px;
+	font-size:14px;
+	font-weight:700;
+}
+.popBox0 .text {
+	text-align:center;
+	font-weight:700;
+	line-height:22px;
+}
+.gategories .text {
+	padding:20px 20px 0;
+	text-align:left;
+}
+.popAddMb {
+/********** 定位暂时隐藏 ********** 
+	margin-top:-150px;
+********** 定位暂时隐藏 **********/ 
+	height:auto;
+	min-height:300px;
+	_height:300px;
+	overflow-x:hidden; /*弹出层在ie下宽度溢出*/
+}
+.popAddMb .zText {
+	padding:20px 15px;
+	line-height:18px;
+	height:auto;
+	min-height:50px;
+	_height:50px;
+	/*强制换行*/
+	word-wrap: break-word; 
+	word-break: normal;
+}
+.popAddMb .count {
+	float:right;
+}
+.popAddMb div.bd {
+	margin:5px 15px;
+	padding:5px;
+	_width:408px;
+}
+.popAddMb .bd .textBg {
+    margin-bottom:-80px;
+    +margin-bottom:-81px; /* hack IE7定位问题 */
+	_width:408px;
+	height:80px;
+    overflow-y:auto;
+	font-size:12px;
+	word-wrap:break-word;
+	word-break:break-all;
+}
+.popAddMb .bd textarea {
+	_margin:0 -15px;
+	border:0 none;
+	width:100%;
+	_width:408px;
+	height:80px;
+	font-size:12px;
+}
+.popAddMb .addElse {
+	padding:15px 10px 5px;
+	font-size:12px;
+}
+.popAddMb .addElse a {
+	margin:0 5px;
+}
+.popAddMb .check {
+	margin:5px 15px 0;
+	padding:0;
+	font-size:12px;
+	cursor:pointer;
+}
+.popAddMb .check input {
+	margin-right:10px;
+	cursor:pointer;
+}
+.addMsg {
+	height:auto;
+	min-height:230px;
+	_height:230px;
+}
+.addMsg .count {
+	float:right;
+}
+.addMsg div.bd {
+	margin:5px 15px;
+	padding:5px;
+	_width:408px;
+}
+.addMsg .bd .textBg {
+    margin-bottom:-80px;
+    +margin-bottom:-81px; /* hack IE7定位问题 */
+	_width:408px;
+	height:80px;
+    overflow-y:auto;
+	font-size:12px;
+	word-wrap:break-word;
+	word-break:break-all;
+}
+.addMsg .bd textarea {
+	_margin:0 -15px;
+	border:0 none;
+	width:100%;
+	_width:408px;
+	height:80px;
+	font-size:12px;
+}
+.addMsg .addElse {
+	padding:15px 10px 5px;
+	font-size:12px;
+}
+.addMsg .addElse a {
+	margin:0 5px;
+}
+.addMsg .addElse .else {
+	float:right;
+}
+.addMsg .text,
+.addMsg .else {
+	padding:10px 15px 0;
+	text-align:left;
+	font-size:12px;
+}
+.addMsg .else {
+	padding:5px 15px;
+}
+.addGz {
+/********** 定位暂时隐藏 ********** 
+	margin-top:-200px;
+********** 定位暂时隐藏 **********/ 
+}
+.addGz .text {
+	font-weight:700;
+}
+.addGz .text span {
+	margin:0 5px;
+}
+.cueLogin .text {
+	font-weight:700;
+}
+.gift .gName { /* 送礼确认 */
+	padding:10px 0;
+	font-weight:400;
+}
+.mPay .button input { /* 美空充值 */
+	width:150px;
+}
+.addSClass {
+/********** 定位暂时隐藏 ********** 
+	margin-top:-160px;
+********** 定位暂时隐藏 **********/ 
+	height:auto;
+	min-height:260px;
+	_height:260px;
+}
+.addSClass span,
+.addSClass pre,
+.addSClass input {
+	font-size:12px;
+}
+.addSClass .edit {
+	padding:5px 30px 5px 60px;
+	height:22px;
+	font-size:12px;
+}
+.addSClass .edit input.bd {
+	padding:2px 5px;
+	width:170px;
+}
+.addSClass .edit input.bt_2 {
+	margin:0 5px;
+/********** 旧版兼容 **********/
+	padding:0;
+/********** 旧版兼容 **********/ 
+	height:21px;
+}
+.addSClass .edit a {
+	margin:0 5px;
+}
+.addSClass .list {
+	padding:5px 30px;
+	height:22px;
+	line-height:22px;
+	font-size:12px;
+}
+.addSClass .list span {
+	float:right;
+}
+.addSClass .list .name {
+	float:none;
+}
+.addSClass .list span a {
+	margin:0 5px;
+}
+.addSClass .list .arrow10 {
+	margin-left:10px;
+	vertical-align:middle;
+}
+.eName .text { /* 修改用户名 */
+	padding-bottom:5px;
+}
+.eName .text .merit {
+	position:relative;
+	margin-right:5px;
+	vertical-align:middle;
+	_vertical-align:-0.5%;
+}
+.popBox1 {
+/********** 定位暂时隐藏 ********** 
+	margin:-125px auto auto -300px;
+********** 定位暂时隐藏 **********/ 
+	width:600px;
+	height:180px;
+}
+.addContent {
+/********** 定位暂时隐藏 ********** 
+	margin-top:-190px;
+********** 定位暂时隐藏 **********/ 
+	height:auto;
+	min-height:310px;
+	_height:310px;
+}
+.addContent .mdBd {
+	margin:20px 15px;
+	padding:15px;
+	font-weight:700;
+	text-align:center;
+}
+.addContent .addText {
+	padding:5px 15px;
+}
+.addContent .addText span {
+	display:inline-block;
+}
+.addContent .addText .name {
+	width:25%;
+	text-align:right;
+	font-weight:700;
+}
+.addContent .addText .bd {
+	margin:0 15px;
+	padding:5px;
+	width:50%;
+}
+.addContent .addText .bd input {
+	width:100%;
+	border:0 none;
+}
+.addContent .addText .bd textarea {
+	width:100%;
+	height:50px;
+	border:0 none;
+	font-size:12px;
+}
+.addContent .addText .else {
+	width:10%;
+	font-weight:700;
+}
+.addSInfo .addElse {
+	padding:35px 15px 10px;
+	font-weight:700;
+	font-size:14px;
+	+height:auto;
+}
+.addSInfo .addElse .count {
+	float:right;
+	font-weight:400;
+}
+.addSInfo .text {
+	margin:0 15px;
+	padding:5px;
+	_width:558px;
+}
+.addSInfo p textarea {
+	_margin:0 -15px;
+	border:0 none;
+	width:100%;
+	_width:558px;
+	height:35px;
+	font-size:14px;
+}
+.cModule .mList {
+	float:left;
+	_display:inline; /* hack IE6浮动双边距BUG */
+	margin:40px -30px -25px 60px;
+	padding:7px 5px;
+	width:130px;
+}
+.cModule .mList input {
+	margin-right:10px;
+}
+.reputation {
+/********** 定位暂时隐藏 ********** 
+	margin-top:-150px;
+********** 定位暂时隐藏 **********/ 
+	height:auto;
+	min-height:230px;
+	_height:230px;
+}
+.reputation .text {
+	padding:20px;
+	text-align:center;
+	font-weight:700;
+	line-height:26px;
+}
+.reputation hr {
+	margin:0 30px;
+}
+.reputation .choose {
+	padding:20px;
+	text-align:center;
+	font-weight:700;
+}
+.reputation .choose input[type="checkbox"] {
+	margin:0 10px;
+}
+.reputation .addText {
+	padding:15px 30px;
+}
+.reputation .addText p {
+	margin-top:10px;
+	padding:5px;
+	_width:528px;
+	font-size:12px;
+}
+.reputation .addText p textarea {
+	width:100%;
+	_width:528px;
+	height:90px;
+	border:0 none;
+	font-size:14px;
+}
+.addMp {
+	height:auto;
+	min-height:180px;
+	_height:180px;
+}
+.addMp p.mBd {
+	margin:0 50px;
+	padding:15px;
+	text-align:center;
+}
+.addMp .text {
+	padding:20px 15px 15px;
+	text-align:center;
+}
+.addMp .text input.bd {
+	margin:0 5px;
+	padding:5px;
+	width:150px;
+}
+.addMp .text input.bt_2 {
+	width:100px;
+}
+.addMp .text span {
+	font-size:12px;
+}
+.addMp .text img {
+	margin-left:5px;
+	vertical-align:middle;
+	+vertical-align:baseline; /* hack IE7/6对齐 */
+}
+.popBox2 {
+/********** 定位暂时隐藏 ********** 
+	margin:-300px auto auto -150px;
+********** 定位暂时隐藏 **********/ 
+	width:300px;
+	height:auto;
+	min-height:530px;
+	_height:530px;
+}
+.addBulletin .important {
+	margin:20px 5px;
+	padding:2px 0;
+	text-align:center;
+	font-size:12px;
+	font-weight:700;
+	line-height:18px;
+}
+.addBulletin .text {
+	margin:20px auto;
+	padding:5px;
+	width:200px;
+}
+.addBulletin .text textarea {
+	width:100%;
+	height:350px;
+	border:0 none;
+	font-size:14px;
+	line-height:24px;
+}
+.popBox3 {
+/********** 定位暂时隐藏 ********** 
+	margin:-250px auto auto -350px;
+********** 定位暂时隐藏 **********/ 
+	width:700px;
+	height:auto;
+	min-height:400px;
+	_height:400px;
+}
+.addMusic {
+/********** 定位暂时隐藏 ********** 
+	margin-top:-250px;
+********** 定位暂时隐藏 **********/ 
+	padding:0 0 70px;
+	height:auto;
+	min-height:430px;
+	_height:430px;
+	width:752px;
+}
+.addMusic .sText {
+	padding:25px 15px 0;
+}
+.addMusic .sText input.bd {
+	margin-right:10px;
+	padding:5px;
+	width:250px;
+}
+.addMusic .count {
+	padding:5px 15px 25px;
+}
+.addMusic .count span {
+	padding:0 10px;
+}
+.addMusic .count .name {
+	font-weight:700;
+}
+.addMusic .musicList {
+	padding:15px;
+	font-size:12px;
+}
+.addMusic .musicList li {
+	margin-bottom:-1px;
+	padding:10px 5px;
+	border-width:1px 0;
+	_border-width:0;
+	cursor:default;
+}
+.addMusic .musicList li span {
+	display:inline-block;
+/********** 定位暂时隐藏 **********/
+ 	font-size:12px;
+/********** 定位暂时隐藏 **********/ 
+}
+.addMusic .musicList li .mName {
+	width:33%;
+}
+.addMusic .musicList li .try , .addMusic .musicList li .download{
+	width:5%;
+	text-align:center;
+	visibility:hidden;
+/********** 旧版兼容 **********/
+ 	font-size:12px;
+/********** 旧版兼容 **********/ 
+}
+
+.addMusic .musicList li .name {
+	width:12%;
+}
+.addMusic .musicList li .album {
+	width:25%;
+}
+.addMusic .musicList li .set {
+	width:17%;
+	text-align:center;
+	visibility:hidden;
+/********** 旧版兼容 **********/
+ 	font-size:12px;
+/********** 旧版兼容 **********/ 
+}
+.addMusic .musicList li.sBC .set, /* hack IE6不支持li:hover兼容 */
+.addMusic .musicList li.sBC .try, /* hack IE6不支持li:hover兼容 */
+.addMusic .musicList li.sBC .download,
+.addMusic .musicList li:hover .try,
+.addMusic .musicList li:hover .set,
+.addMusic .musicList li:hover .download {
+	visibility:visible;
+	cursor:pointer;
+}
+.addFlash {
+	height:auto;
+	min-height:305px;
+	_height:305px;
+}
+.addFlash .fTab {
+	padding:10px 15px;
+}
+.addFlash .fTab a {
+	display:inline-block;
+	margin-right:15px;
+}
+.addFlash .fTab a.mBd {
+	padding:2px 5px;
+}
+.addFlash .fLink {
+	padding:5px 15px;
+}
+.addFlash .fLink input {
+	margin:5px 0;
+	padding:5px;
+	width:95%;
+}
+.addFlash .fLink p {
+	padding:5px;
+	font-size:12px;
+}
+.addFlash .fLink p.title {
+	padding:5px 5px 5px 0;
+	line-height:20px;
+}
+.addFlash .fLink #fError {
+	width:150px;
+}
+.addFlash .fSize {
+	padding:5px 15px;
+}
+.addFlash .fSize ul {
+	margin:5px 0;
+}
+.addFlash .fSize ul li {
+	float:left;
+	padding-top:5px;
+	width:250px;
+}
+.addFlash .fSize ul li input {
+	margin-right:10px;
+}
+
+
+
+/**********旧版**********/
+.addPic {
+    margin-top:-1px;
+    padding:10px;
+}
+.addPicPad {
+	padding:20px 60px;
+	width:480px;
+}
+.addPic .upNav { /* 上传图片Tab */
+	margin:0 -40px;
+	padding:10px 0;
+	height:30px;
+}
+.addPic .upNav a:link,
+.addPic .upNav a:visited,
+.addPic .upNav a:hover,
+.addPic .upNav a:active {
+	margin-right:10px;
+	padding:5px 20px;
+	line-height:15px;
+}
+.addPic .upNav a:hover,
+.addPic .upNav a:active {
+	padding:4px 19px;
+	border:1px solid #F09;
+}
+.addPic .upNav a.alive:link,
+.addPic .upNav a.alive:visited,
+.addPic .upNav a.alive:hover,
+.addPic .upNav a.alive:active {
+	padding:4px 19px;
+	border:1px solid #F09;
+}
+.addPic .batchUp .picUpBox .buttonS_5 { /* 批量上传开始 */
+	margin-left:0;
+}
+.addPic .batchUp .batchUpBox div.scroll { /* 批量上传滚动条 */
+	height:173px;
+	overflow-y:scroll;
+}
+.addPic .batchUp table { /* 批量上传列表 */
+	margin:0;
+	padding:0;
+	width:461px;
+}
+.addPic .batchUp table {
+	line-height:28px;
+}
+.addPic .batchUp table th {
+	font-weight:400;
+	text-align:center;
+}
+.addPic .batchUp table .name { /* 批量上传文件名 */
+	padding-left:4px;
+	width:150px;
+}
+.addPic .batchUp table .uping { /* 批量上传进度条 */
+	margin:0 auto;
+	padding:0 10px;
+	width:160px;
+}
+.addPic .batchUp table .uping .bd {
+	display:inline-block;
+	+display:block;
+	+float:left;
+	+margin-top:6px;
+	margin-right:5px;
+	padding:2px;
+	width:110px;
+	+width:102px;
+	vertical-align:middle;
+}
+.addPic .batchUp table .uping span {
+	+float:left;
+}
+.addPic .batchUp table .uping .bd .bg {
+	height:10px;
+}
+.addPic .batchUp table .count {
+	width:90px;
+	text-align:center;
+}
+.addPic .batchUp table .del {
+	padding-right:4px;
+	width:30px;
+	text-align:center;
+}
+.addPic .batchUp table .del img {
+	background-position:-140px -92px; 
+	padding:8px 10px;
+	cursor:pointer;
+}
+.addPic .batchUp .bottom {
+	margin:-1px 0 0;
+	padding:5px 5px 10px;
+}
+.addPic .batchUp .bottom a {
+	margin-left:-3px;
+}
+.addPic .buttonL_10 {
+    margin:10px auto;
+}
+.addPic .buttonL_3 {
+    margin:10px 10px 10px 0;
+}
+.addPic p.textMiddle {
+	margin-top:10px;
+	padding-right:70px;
+}
+.addPicPad p.font12 {
+	margin-left:-20px;
+	padding-right:60px;
+}
+.addPic p.textMiddle img {
+	margin:0 5px;
+	width:35px;
+	height:20px;
+	background-color:#999;
+}
+.addPic p.textMiddle input {
+	margin:4px 5px 0 20px;
+}
+.addPic p.textMiddle img.bg {
+	background-color:#F09;
+}
+
+
+
+/*上传封面开始*/
+.picPop{font-family:"微软雅黑";}
+.picPop .button {
+	margin:20px auto;
+	text-align:center;
+}
+.picPop .content .button,
+.picPop .container .button {
+	margin:0;
+	padding:10px 0;
+	text-align:left;
+}
+.picPop .coverImg9 {
+	padding:0;
+	width:959px;
+}
+.picPop .coverImg1 div.l,
+.picPop .coverImg3 div.l,
+.picPop .coverImg4 div.l,
+.picPop .coverImg5 div.l,
+.picPop .coverImg6 div.l,
+.picPop .coverImg7 div.l {
+	_display:inline;
+	margin:auto 5px 5px auto;
+}
+.picPop p.bd {
+	margin:235px auto;
+	padding:5px 0;
+	width:200px;
+	height:18px;
+	text-align:center;
+}
+.picPop .height600 {
+	height:600px;
+}
+.picPop .height600 p.bd {
+	margin:280px auto;
+}
+.picPop .height700 {
+	height:700px;
+}
+.picPop .height700 p.bd {
+	margin:330px auto;
+}
+.picPop .coverImg1 {
+	margin-bottom:-5px;
+}
+.picPop .coverImg1 div.l,
+.picPop .coverImg3 div.l,
+.picPop .coverImg4 div.l,
+.picPop .coverImg7 div.l {
+	width:475px;
+}
+.picPop .coverImg5 div.l {
+	width:234px;
+}
+.picPop .coverImg9 div.l,
+.picPop .coverImg9 div.r {
+	width:314px;
+}
+.picPop .coverImg5 div.button {
+	width:236px;
+}
+.picPop .coverImg3 .content,
+.picPop .coverImg6 .content {
+	margin:0 0 5px;
+}
+.picPop .coverImg3 div.l,
+.picPop .coverImg4 div.l,
+.picPop .coverImg5 div.l,
+.picPop .coverImg9 div.l {
+	_display:inline;
+	margin:auto 5px auto auto;
+}
+.picPop .coverImg6 {
+	_margin-bottom:-5px;
+}
+.picPop .coverImg7 .content {
+	margin:0;
+}
+.picPop .coverImg2,
+.picPop .coverImg3 .content,
+.picPop .coverImg6,
+.picPop .coverImg7 .content {
+	padding:0;
+	width:957px;
+}
+
+.picPop p.mainDashedOn {
+	margin:20px auto;
+	padding:20px 0;
+	text-align:center;
+	width:400px;
+}
+.picPop .switch {
+	padding:10px 0;
+}
+.picPop .clearPic {
+	margin-right:5px;
+}
+.picPop .switch img.bg {
+	visibility:hidden;
+}
+.picPop .switch img.alive {
+	visibility:visible;
+}
+.picPop .switch img.bg {
+	margin:0 5px 0 15px;
+}
+.picPop .active .speed {
+	margin-top:50px;
+	padding-left:10px;
+	border-width:1px 0;
+}
+.picPop .active .speed input.r {
+	margin-top:10px;
+}
+.picPop .simple {
+	padding:10px 0;
+	border-width:0 0 1px;
+}
+.picPop .simple img {
+	margin-right:20px;
+}
+.picPop p.pad img.bg {
+	margin-right:40px;
+}
+.picPop .active .box1 {
+	width:959px;
+}
+.picPop .active .box1 div.bd {
+	+height:500px;
+}
+.picPop .active .box2 div.l {
+	margin-right:5px;
+	width:475px;
+}
+.picPop .active .box3 div.l {
+	margin-right:5px;
+	width:314px;
+}
+.picPop .add {
+	margin:10px auto;
+	padding:10px 0;
+	width:959px;
+	border-width:0 0 1px;
+}
+/*上传封面结束*/
+
+/*上传裁图开始*/
+.picPop .picUpBox {
+    margin:10px auto;
+}
+.picPop .picUpBox .picUpText {
+	position:absolute;
+	+position:inherit;
+    padding:5px;
+	width:325px;
+	z-index:2;
+	_background-color:#FFF;
+}
+.picPop .picUpBox .buttonS_5 {
+	margin-top:1px;
+	margin-left:343px;
+	+margin-left:0;
+}
+.picPop .picUpBox .picUp, x:-moz-any-link, x:default {
+	margin-left:-120px;
+}
+.picPop .picUpBox .picUp {
+    position:absolute;
+	margin-left:-220px;
+	+margin-left:-80px;
+	+padding:5px;
+	height:30px;
+	+height:auto;
+	width:80px;
+	filter:alpha(opacity=0);
+	-moz-opacity:0;
+	opacity:0;
+}
+@media all and (min-width:0px) {
+	.picPop .picUpBox .picUp {
+		margin-left:-85px;
+		padding:5px;
+		height:auto;
+	}
+}
+@-moz-document url-prefix(){
+	.picPop .picUpBox .picUp {
+		margin-left:-220px;
+	}
+}
+.picPop .picUpBox .close {
+    margin:9px 470px auto auto;
+	_margin-right:235px;
+}
+.addPicPad .picUpBox .close {
+	margin-right:50px;
+	_margin-right:25px;
+}
+.picPop .picUpBox .buttonS_7 {
+	position:relative;
+}
+.picPop .upDate {
+	padding:10px 20px;
+}
+.picPop .upDate .important {
+	margin-left:0;
+	padding-left:5px;
+	width:120px;
+}
+.picPop .upDate .button {
+	text-align:left;
+}
+.picPop .uping {
+	margin:10px 0;
+	width:200px;
+}
+.picPop .uping .bd {
+	padding:3px;
+}
+.picPop .uping .bd .bg {
+	width:70%;
+	height:12px;
+}
+/*.imageBox {
+	position:relative;
+	margin:20px 0;
+	width:1041px;
+	height:560px;
+	overflow:hidden;
+}
+.imageBox .load {
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-80px auto auto -150px;
+	width:300px;
+	height:160px;
+	text-align:center;
+	line-height:160px;
+	z-index:3;
+}
+.imageBox .bg {
+	position:absolute;
+	width:1041px;
+	height:560px;
+	z-index:2;
+}
+.imageBox .topBg,
+.imageBox .buttonBg {
+	height:30px;
+}
+.imageBox .left,
+.imageBox .middle,
+.imageBox .right {
+	width:42px;
+	height:500px;
+}
+.imageBox .middle {
+	margin:0;
+	width:957px;
+}*/
+.picPop .imageWidth {
+	margin-bottom:10px;
+	width:633px;
+	+width:638px;
+}
+.picPop .imageWidth .pad {
+	margin:0 5px 0 20px;
+}
+.picPop .imageWidth .bg {
+	position:relative;
+	margin:13px auto auto 20px;
+	width:288px;
+	height:3px;
+}
+.picPop .imageWidth .bg .arrow {
+	position:absolute;
+	top:-15px;
+	left:0px;
+	z-index:1;
+}
+.picPop .imageWidth p {
+	padding:10px 0;
+}
+.picPop .imageWidth input.bd {
+	padding:5px;
+	width:456px;
+}
+.picPop #picturetp {
+	margin-top:10px;
+	text-align:center;
+}
+.publish .imageWidth {
+    margin-top:10px;
+    width:468px;
+}
+/*上传裁图结束*/
+
+/*上传头像开始*/
+.picPop .icon {
+	width:660px;
+}
+/*.icon .imageBox {
+	width:450px;
+	height:300px;
+}
+.icon .imageBox .load {
+	margin:-50px auto auto -100px;
+	width:200px;
+	height:100px;
+	line-height:100px;
+}
+.icon .imageBox .bg {
+	width:450px;
+	height:300px;
+}
+.icon .imageBox .topBg,
+.icon .imageBox .buttonBg {
+	height:80px;
+}
+.icon .imageBox .left,
+.icon .imageBox .middle,
+.icon .imageBox .right {
+	width:160px;
+	height:140px;
+}
+.icon .imageBox .middle {
+	margin:0;
+	width:130px;
+}*/
+.picPop .icon .imageWidth {
+	margin-top:10px;
+	width:468px;
+}
+.picPop .icon .view {
+	_display:inline;
+	margin:60px 30px auto auto;
+	text-align:center;
+}
+.picPop .icon .view p {
+	margin-bottom:10px;
+	text-align:left;
+}
+.picPop .icon .view img {
+	width:130px;
+	height:140px;
+}
+.picPop .icon .button {
+	padding-top:10px;
+}
+.picPop .icon .button input {
+	background-color:#FFF;
+	margin:0;
+}
+.picPop #zoompicstr {
+	margin-top:10px;
+	text-align:center;
+}
+.addPic {
+    margin-top:-1px;
+    padding:10px;
+}
+.addPicPad {
+	padding:20px 60px;
+	width:480px;
+	height:auto;
+	min-height:260px;
+	_height:260px;
+}
+.addPicPad .addBigPic {
+	padding:10px 5px 5px;
+	font-size:12px;
+}
+.addPicPad .addBigPic input {
+	margin-right:5px;
+	vertical-align:middle;
+}
+.addPicPad .button {
+	left:0;
+}
+.addPic .upNav { /* 上传图片Tab */
+	margin:0 -40px;
+	padding:10px 0;
+	height:30px;
+}
+.addPic .upNav a:link,
+.addPic .upNav a:visited,
+.addPic .upNav a:hover,
+.addPic .upNav a:active {
+	margin-right:10px;
+	padding:5px 20px;
+	line-height:15px;
+}
+.addPic .upNav a:hover,
+.addPic .upNav a:active {
+	padding:4px 19px;
+	border:1px solid #F09;
+}
+.addPic .upNav a.alive:link,
+.addPic .upNav a.alive:visited,
+.addPic .upNav a.alive:hover,
+.addPic .upNav a.alive:active {
+	padding:4px 19px;
+	border:1px solid #F09;
+}
+.addPic .buttonL_10 {
+    margin:10px auto;
+}
+.addPic .buttonL_3 {
+    margin:10px 10px 10px 0;
+}
+.addPic p.textMiddle {
+	margin-top:10px;
+	padding-right:70px;
+}
+.addPicPad p.font12 {
+	margin-left:-20px;
+	padding-right:60px;
+}
+.addPic p.textMiddle img {
+	margin:0 5px;
+	width:35px;
+	height:20px;
+	background-color:#999;
+}
+.addPic p.textMiddle input {
+	margin:4px 5px 0 20px;
+}
+.addPic p.textMiddle img.bg {
+	background-color:#F09;
+}
+/*上传头像结束*/
+
+p.load {
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-10px auto auto -50px;;
+	height:20px;
+	width:100px;
+	line-height:20px;
+	text-align:center;
+}
+.buttonS_5 {
+	background-color:#FFF;
+	width:60px;
+	height:28px;
+	line-height:20px;
+	cursor:pointer;
+}
+.weight700 {
+	font-weight:700;
+}
+.buttonS_7 {
+	background-color:#FFF;
+	width:70px;
+	height:28px;
+	line-height:20px;
+	cursor:pointer;
+}
+.buttonL_2 {
+	background-color:#FFF;
+	width:168px;
+	height:40px;
+	line-height:32px;
+	cursor:pointer;
+}
+.imageWidth .bg {
+    background: none repeat scroll 0 0 #000000;
+}
+.arrow {
+    background: url("../images/uppic.gif") no-repeat scroll 0 -500px transparent;
+    height: 33px;
+    width: 20px;
+}
+/*************************************************************************************/
+/****************************************新增土豆视频上传信息 begin*********************************************/
+.tudou-table{ border-collapse:collapse;  font-size:12px;}
+.tudou-table tr{ height:25px; vertical-align:middle;}
+.tudou-table input.text{ width:350px; border: 1px solid #DEDEDE; line-height:28px; height:28px;}
+.tudou-table .text-center{ text-align:center;}
+.tudou-table .description{ padding:30px 0px; border:#F09 1px dashed; color:#F09; text-align:center;}
+.tudou-table .radio-span{ display:inline-block; width:55px;  line-height:22px; overflow-x:visible; white-space:nowrap;}
+.tudou-table .uping{ width:525px;}
+.tudou-table .uping .bd{ padding:1px;}
+.tudou-table .uping .bg{height:20px;}
+.tudou-table .upload-num{ float:right; line-height:25px; color: #999;}
+.tudou-table .upload-size{ line-height:25px; display:block;}
+.tudou-table .ptop5{ padding-top:5px; vertical-align:text-top;}
+.tudou-table .error-tip{ padding:5px; border: #DEDEDE 1px solid; color: red; background: #FFFFF2; margin:5px 0px;}
+.popBox3 .m20{ margin:20px 0px 40px 0px;}
+
+.tudou-table .browser{ background:#FFF; height:25px; width:60px;line-height: 25px;  border: #ECE9D8 outset 2px; display:inline-block; text-align:center; vertical-align:bottom; }
+.tudou-table .browserFile{ height:30px; overflow:hidden; width:60px; position:relative; left:-72px; display:inline-block; filter:alpha(opacity=0); opacity:0;cursor: pointer; }
+/****************************************新增土豆视频上传信息 end************************************************/
+
+/*** 新版 样式 begin ***/
+.new-title{ font-family:"微软雅黑",Verdana,"宋体",sans-serif; font-size:18px; font-weight:bold; color:#f09; border-bottom:#bbb solid 1px; line-height:48px; text-indent:5px;}
+.new-button{ position:absolute; bottom:20px; text-align:center; width:90%;}
+.new-input{ font-family:"微软雅黑",Verdana,"宋体",sans-serif; font-size:20px; font-weight:700; width:173px; height:38px; margin:0px 10px; background:#fff;}
+/*** 新版 样式 end ***/
+
+/*** 注册 begin ***/
+.reg-active-mail-div { width:495px;font-family:"微软雅黑",Verdana,"宋体",sans-serif; height:270px; padding:0px 16px;  line-height:30px;}
+.reg-active-mail-div .reg-tip-content{ margin-top:60px; text-align:center; color:#666;}
+.reg-active-mail-div .text { border: 1px solid #BFBFBF; padding: 2px; width: 300px; margin:8px 0px; text-align:left;}
+.reg-active-form-div{ height:321px;}
+.reg-active-form-div form{ width:380px; margin:0px auto; display:block; margin-top:50px; text-align:right;}
+.reg-error-tip{ color:#F00; line-height:20px; padding-left:74px; text-align:left; }
+.reg-fs30{ font-size:30px;}
+/*** 注册 end ***/
+
+/*** 档案弹出层 begin ***/
+.profile-div{ height:auto; width:600px;}
+.profile-div .profile-sortable{ width:200px; margin:20px auto;}
+.profile-div .profile-sortable li{ margin-bottom: 10px; background:#FFF;}
+.profile-div .profile-sortable li a{cursor:move; border:#bbb solid 1px; padding: 9px 19px; font-weight:bold; display:block; color:#666;}
+.profile-div .profile-sortable li a:hover{ border-color:#f09;}
+/*** 档案弹出层 begin ***/
+
+/*** 工作机会弹出层 begin ***/
+.project-div{ height:auto; width:500px; border:#bbb solid 1px;}
+.project-div .project-div-sign-up{width:380px; margin:50px auto;}
+.project-div h2{ text-align:center; color:#f09; margin:10px auto; font-weight:bold;}
+.project-div p{ line-height:25px; font-weight:bold; }
+.project-div textarea{ width:100%; height:100px; border:#bbb solid 1px;}
+.project-div .new-button{ width:100%;}
+.project-div .new-button .new-input{ font-size:16px; width:120px;}
+/*** 工作机会弹出层 end ***/
+
+/*** 编辑器添加链接弹出层 begin ***/
+.moko-editer-div{ padding:0px 16px; height:300px; width:495px;}
+.moko-editer-div-content{ width:366px; margin:50px auto;}
+.moko-editer-div-content h3{ font-size:18px; color:#666; margin-bottom:10px;}
+.moko-editer-div-content input{ border:#bbb solid 1px; width:95%; padding:10px; color:#666;}
+.moko-editer-div .new-input{ margin:0px 5px; }
+/*** 编辑器添加链接弹出层 end ***/
+
+/*** 登录弹出层 begin ***/
+.login-div{ padding:15px; border:#ccc solid 1px; width:450px; font-family:"微软雅黑",Verdana,"宋体",sans-serif;}
+.login-div .btn{ background:#fff;}
+.login-div h1{ border-bottom:#d6d6d6 solid 1px; overflow:hidden; padding-bottom:15px; zoom:1;}
+.login-div h1 .login-title{ float:left; color:#0cf; font-size:26px;}
+.login-div h1 .login-close{ float:right;}
+.login-div h1 .login-close a{background:url(../images/div_close.jpg) no-repeat; width:16px; height:16px; display:inline-block;}
+.login-div .login-bottom{ overflow:hidden; border-top:#d6d6d6 solid 1px; padding:20px 26px 0px 12px; line-height:46px;}
+.login-div .login-bottom span{ font-size:18px; color:#f09; float:left}
+.login-div .login-bottom .btn{ float:right; color:#f09; width:79px; height:46px; font-size:14px; font-weight:bold;}
+/*** 登录弹出层 end ***/
+
+
+/*** msp-div begin ***/
+.msp-div{ width:600px; height:auto;}
+.msp-div .outTable{ margin:30px auto 35px auto;}
+.msp-div td{ padding-bottom:5px; vertical-align:middle;}
+.msp-div td .text{ text-align:left; border:#bbb solid 1px; padding:3px; line-height:normal; font-weight:normal; width:300px;}
+.msp-div .required{ color:#f09; font-size:12px;}
+.msp-div .upload-progress td{ vertical-align:top;}
+.msp-div .moko-file-upload { margin:0px;}
+.msp-div .moko-file-upload .file-browser{ margin-left:8px;}
+.msp-div .moko-file-upload .file-text{ width:160px;}
+.msp-div .upload-progress .required{ margin-left:8px;}
+.msp-div .ml{ margin-left:36px; line-height:24px;}
+.msp-div .m2{ color:#f09; line-height:24px;}
+.msp-div .borderOn{border:#bbb solid 1px;}
+/*** msp-div end ***/
+
+/*** 新文件浏览按钮 begin ***/
+.moko-file-upload{margin: 10px auto; overflow:hidden;}
+.moko-file-upload .file-browser{ display:inline-block; position:relative; width: 60px; height: 28px; overflow:hidden; margin-left:5px; cursor:pointer; }
+.moko-file-upload .file-browser-btn{ width: 100%; height: 28px; background:#fff; position:absolute; font-size:12px;}
+.moko-file-upload .file-browser-input{width: 100%; height: 28px; position:absolute; filter:alpha(opacity=0); opacity:0; _margin-left:-5px; overflow:hidden;}
+.moko-file-upload .file-text{padding: 5px; width: 325px; border: 1px solid #BFBFBF; vertical-align:top;}
+.moko-file-upload .file-remove{display: inline-block; background: url(../images/bgpic.gif) 0 -600px no-repeat; width: 16px; height: 15px; margin-left:10px;}
+/*** 新文件浏览按钮 end ***/
+
+/*** 微博缩略图 begin ***/
+.blog-temp-thumb{ border:#bbb solid 1px; padding:0px 20px; position:absolute; line-height:40px; background:#fff; z-index:10;}
+/*** 微博缩略图 end ***/
+
+/*** iphone case begin ***/
+.iphone-case-div{ width:628px; height:auto;}
+.iphone-case-tip{ color:#f09; border:#f09 dashed 1px; width:580px; text-align:center; padding:32px 0; margin:18px auto; font-size:16px;}
+.iphone-case-div ul{ width:410px; margin:0px auto 30px auto;}
+.iphone-case-div li{ margin-bottom:13px;}
+.iphone-case-div label{ width:100px; display:inline-block; text-align:right; margin-right:10px;}
+.iphone-case-div .text{ border: 1px solid #BFBFBF; padding: 5px; width: 250px; text-align: left; font-weight:normal; line-height:normal; }
+/*** iphone case end ***/
+
+/*** mini-link-div begin ***/
+.mini-link-div{ width:450px; height:300px; border: 1px solid #BBB; position:relative; font-family:"微软雅黑",Verdana,"宋体",sans-serif; background:#fff;}
+.mini-link-div h3{ background:#eee; height:40px; line-height:40px; text-indent:14px;}
+.mini-link-div .content-div{ padding:0px 25px 18px 25px;}
+.moko2sina{ background:url(../images/mini_link/moko2sina.jpg) center no-repeat; height:90px;}
+.mini-link-div .filed1{ color:#666; margin-bottom:32px; line-height:25px;}
+.mini-link-div .filed2{ font-size:12px; color:#999;}
+.mini-link-div .buttons{ position:absolute; bottom:25px; width:100%; text-align:center;}
+.mini-link-div .buttons input{ margin:0 11px; font-weight:700;}
+/*** mini-link-div end ***/
+
+/*** sina pop begin ***/
+.sina-pop{ width:600px; height:auto; padding:0px;}
+/*** sina pop end ***/
+
+/*** 工作预约 begin ***/
+.appointment{ width:500px; height:auto; padding:0 5px;}
+.appointment .title{ padding:3px 0; line-height:25px; border-bottom:#bbb solid 1px;}
+.appointment .title a{ float:right;}
+.appointment-tip{ color:#f09; font-size:14px; font-weight:bold; padding:10px 0; margin-bottom:10px; }
+.appointment-content{ margin-bottom:75px;}
+.appointment-content .f00{ color:#f00; display:inline-block; width:80px; text-align:center; font-size:12px;}
+.appointment h2{ font-weight:bold; font-size:16px; padding-bottom:5px;}
+.appointment ul{ margin:0px auto 30px auto;}
+.appointment li{ margin-bottom:13px; overflow:hidden; display:block;}
+.appointment .label{ width:100px; display:inline-block; text-align:right; margin-right:10px; float:left; line-height:20px;}
+.appointment .text{ border: 1px solid #BFBFBF; padding: 5px; text-align: left; font-weight:normal; line-height:normal; }
+.appointment .multi-text{ border: 1px solid #BFBFBF; padding: 5px; width: 350px; height:70px; text-align: left; font-weight:normal; line-height:normal; }
+/*** 工作预约 end ***/
+
+/*** sina pop end ***/

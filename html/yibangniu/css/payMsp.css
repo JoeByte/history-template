@@ -1,0 +1,58 @@
+@charset "utf-8";
+/******************************
+ * CSS Document
+ * payMsp.css 支付MspCSS
+ *
+ * @linwenbin
+ * @2013-03-07
+ * @link 
+******************************/
+.mspcf09{color:#f09}
+
+.paymsp-dialog{ border:#ccc solid 1px; position: relative; padding-bottom: 70px; width: 450px; height: 200px; overflow:hidden; zoom:1;}
+.paymsp-dialog .pay-tip-zhifuMsp{ text-align:center; font-size:16px; margin:50px auto auto 10px; font-weight:bold; color:#f09}
+.paymsp-dialog .buttons1{ float:left; left:0; bottom:40px;}
+.paymsp-dialog .buttons11{ float:left; left:0; bottom:40px;}
+.paymsp-dialog .buttons2{ position:absolute; left:0; bottom:120px; text-align: center; width:100%; }
+.paymsp-dialog .buttons3{ position:absolute; left:0; bottom:70px; text-align: center; width:100%; }
+.paymsp-dialog .buttons1 .btn{ width: 80px; height: 25px; font-size: 13px;margin:10px 10px auto 210px; color:#f09}
+.paymsp-dialog .buttons11 .btn{ width: 80px; height: 25px; font-size: 13px; margin:10px auto auto auto;}
+.paymsp-dialog .buttons2 .btn{ width: 180px; height: 25px; font-size: 13px; margin: 0 20px; }
+.paymsp-dialog .buttons3 .btn{ width: 180px; height: 25px; font-size: 13px; margin: 0 20px; }
+.paymsp-dialog .pay-tip-a{position:absolute; right:10px; bottom:0;height:35px;}
+.paymsp-dialog .pay-tip-asuc{ text-align: center; margin:20px 50px auto 40px;}
+.paymsp-dialog .pay-tip-asucu{ text-align: right; margin:120px 20px 10px auto;}
+.paymsp-dialog .share-sina-text{left:0; margin:15px auto auto 10px; text-align: center; width:100%; }
+.paymsp-dialog .sina-title{text-align:left; font-size:14px; margin:5px -200px 20px 90px; width:290px;height:22px; background-color:#E4E4FF;bo}
+.paymsp-dialog .writedown{text-align:right; font-size:14px; margin:-20px 65px -10px 10px; }
+.paymsp-dialog .sina-textarea{color:gray}
+
+.paymsp-dialog .orderMsp-price-title{text-align:left; font-size:14px; margin:45px 200px 20px 30px; width:290px;height:22px; }
+.paymsp-dialog .orderMsp-userMoney-title{text-align:right; font-size:14px; margin:-42px 0px 20px 100px; width:290px;height:22px; }
+.paymsp-dialog .orderMsp-price-yes{text-align:left; font-size:14px; margin:25px 200px 20px 30px; width:290px;height:22px; }
+.paymsp-dialog .orderMsp-price-paynow{text-align:left;font-size:13px; margin:45px 200px 20px 30px; width:80px;height:25px;}
+.paymsp-dialog .orderMsp-price-paybtnwait{text-align:left;font-size:13px; margin:-45px 200px 30px 250px; width:80px;height:25px;}
+.paymsp-dialog .orderMsp-price-paynow .btn{width: 90px; height: 35px; font-size: 13px; color:#f09}
+.paymsp-dialog .orderMsp-price-paybtnwait .btn{width: 90px; height: 35px; font-size: 13px; color:#f09}
+.paymsp-dialog .orderMsp-price-qq{text-align:right; font-size:14px; margin:45px 20px 20px 100px; width:290px;height:22px; }
+
+.payorder-dialog{ border:#ccc solid 1px; position: relative; padding-bottom: 70px; width: 650px; height: 400px; overflow:hidden; zoom:1;}
+.payorder-dialog .order-title{text-align:left; font-size:14px; margin:18px auto auto 8px; }
+.payorder-dialog .order-id{text-align:left; font-size:14px; margin:52px 200px 20px 80px; width:290px;height:22px; }
+.payorder-dialog .order-username{text-align:left; font-size:14px; margin:-42px 200px 20px 260px; width:290px;height:22px; }
+.payorder-dialog .order-phone{text-align:center; font-size:14px; margin:-42px 200px 20px 350px; width:290px;height:22px; }
+.payorder-dialog .order-name{text-align:left; font-size:14px; margin:32px 200px 20px 80px; width:290px;height:22px; }
+.payorder-dialog .order-time{text-align:left; font-size:14px; margin:-42px 200px 20px 250px; width:290px;height:22px; }
+.payorder-dialog .order-price{text-align:left; font-size:14px; margin:-95px 200px 20px 480px; width:290px;height:22px; }
+.payorder-dialog .order-status{text-align:left; font-size:14px; margin:30px 200px 20px 80px; width:290px;height:22px; }
+.payorder-dialog .order-content-title{text-align:left; font-size:14px; margin:82px 200px 20px 80px; width:290px;height:22px; }
+.payorder-dialog .order-content{text-align:left; font-size:14px; margin:12px 200px 20px 120px; width:290px;height:22px; }
+.payorder-dialog .closedialg{text-align:right; font-size:14px; margin:-18px 20px 20px 350px; width:290px;height:22px;color:#666; font-weight:bold}
+.payorder-dialog .hr-line{text-align:center; height:1px;border:none;border-top:2px solid #DEDEDE;margin:-22px auto ;}
+.payorder-dialog .order-cancel-button{float:left; left:0; bottom:40px;}
+.payorder-dialog .order-cancel-button .btn{text-align:center; width: 120px; height: 35px; font-size: 13px;margin:80px 10px 20px 250px; color:#f09}
+
+.paymsp-dialog .orderMsp-zixun-qq{text-align:right; font-size:14px; margin:120px 20px 20px 100px; width:290px;height:22px; }
+.paymsp-dialog .order-title{text-align:left; font-size:14px; margin:18px auto auto 8px; }
+.paymsp-dialog .hr-line{text-align:center; height:1px;border:none;border-top:2px solid #DEDEDE;margin:-22px auto ;}
+.paymsp-dialog .closedialg{text-align:right; font-size:14px; margin:-18px 20px 20px 150px; width:290px;height:22px;color:#666; font-weight:bold}

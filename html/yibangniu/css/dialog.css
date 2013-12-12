@@ -1,0 +1,48 @@
+﻿.ui-dialog{border:1px solid #BFBFBF;background:#fff;}
+.ui-dialog-content{padding:10px;}
+.ui-dialog-titlebar-close{display:none;}
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.ui-widget-overlay { background:#000; opacity:0;filter:Alpha(Opacity=0); }
+.dialogbg{background:#000000;position:absolute;filter:alpha(opacity=20);opacity:0.2;}
+
+.imgcutR,.imgcutT,.imgcutL,.imgcutB{
+position:absolute;
+background:#ECE9D8;
+opacity:0.6;
+z-index:1;
+filter: alpha(opacity=60);
+}
+.boximg{position:absolute;}
+.imgcutbox{
+overflow:hidden;position:relative;background-color:#fff;cursor:move;
+}
+#ajax_upload_dialog .logoCut .imageBox{
+overflow:hidden;position:relative;background-color:#fff;cursor:move;
+}
+.imgcutR{right:0}
+.imgcutB{bottom:0}
+.imgsizer{background:#000;position:relative;margin-top:15px;}
+#ajax_upload_dialog{padding:10px;}
+#ajax_upload_dialog .logoCut .bg{background:#000;position:relative;margin-top:15px;}
+.ui-slider-handle{display:block;position:absolute;}
+
+/*下面的这些css可以根据页面调整 或 用js动态设置 高兴的话 可以写一个js自动设置的...*/
+.imgcutbox{width:470px;height:700px;}
+.imgcutT,.imgcutB{width:132px;left:169px;height:50px;}
+.imgsizer{height:3px;width:280px;float:left;left:25px;}
+.imgsizer .ui-slider-handle{
+background:transparent url(/images/uppic.gif) no-repeat scroll 0 -500px;
+height:33px;
+margin-top:-17px;
+width:20px;
+margin-left:-11px;
+}
+#ajax_upload_dialog .logoCut .bg{height:3px;width:288px;float:left;}
+#ajax_upload_dialog .logoCut .bg .ui-slider-handle{
+background:transparent url(/images/uppic.gif) no-repeat scroll 0 -500px;
+height:33px;
+margin-top:-17px;
+width:20px;
+margin-left:-11px;
+}
+.imgcutR,.imgcutL{height:800px;width:50px;}

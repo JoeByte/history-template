@@ -1,0 +1,17 @@
+﻿@charset "utf-8";
+
+.moko-slider{ position:relative; overflow:hidden; zoom:1; margin-bottom:10px;}
+.moko-slider ul{ overflow:hidden; zoom:1; margin:0; padding:0; list-style:none; height: 236px;}
+.moko-slider ul li{  float:left; display:block; width:960px; text-align:center; }
+.moko-slider ul li a{ display:block;}
+.moko-slider .frame{ width:958px; border:#ccc solid 1px; overflow:hidden;}
+.moko-slider .point-ctrl{ position:absolute; right:10px; top:195px;}
+.moko-slider .left-point,.moko-slider .right-point{ width: 54px; height: 32px; background:url(../images/ui_slider_ctrl.png); _background:url(../images/ui_slider_ctrl.gif); _filter: alpha(opacity=70); float:left;}
+.moko-slider .left-point{ background-position: 0 0;}
+.moko-slider .left-point:hover{ background-position: 0 -33px;}
+.moko-slider .right-point{ background-position: right 0 ; width: 53px;}
+.moko-slider .right-point:hover{ background-position: right -33px;}
+.moko-slider .controller{ text-align:right; font: 14px/1.231 arial; _font-size:6px; font-weight:bold; margin:0px; padding-right:10px; overflow:hidden; zoom:1; }
+.moko-slider .controller a{ text-decoration:none; color:#999; line-height: 24px; height: 24px; margin:0 5px; display:inline-block; text-align:center; }
+.moko-slider .controller a:hover{ color:#dedede;}
+.moko-slider .controller .moko-slider-on,.moko-slider .controller .moko-slider-on:hover{ color:#f09;}
