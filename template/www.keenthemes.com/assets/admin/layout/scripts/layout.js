@@ -425,7 +425,7 @@ var Layout = function () {
             $('.layout-option', panel).val("fluid");
         }
 
-        $('.sidebar-option', panel).val("default");
+        $('.sidebar-option', panel).val("fixed");
         $('.page-header-option', panel).val("fixed");
         $('.page-footer-option', panel).val("default");
         if ($('.sidebar-pos-option').attr("disabled") === false) {
